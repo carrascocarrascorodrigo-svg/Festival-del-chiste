@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#1a472a">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:id="@+id/tvPuntajeHumano"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🎤 TÚ: 0"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="#4A4A4A"
+            android:padding="10dp"
+            android:gravity="center"/>
+        
+        <TextView
+            android:id="@+id/tvPuntajeIA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🤖 IA: 0"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="#4A4A4A"
+            android:padding="10dp"
+            android:gravity="center"/>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tvRonda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RONDA 1/5"
+        android:textSize="18sp"
+        android:textColor="#FFD700"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+    
+    <TextView
+        android:id="@+id/tvPalabra"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="CHUPALLA"
+        android:textSize="28sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:background="#FF5722"
+        android:layout_marginTop="20dp"/>
+    
+    <TextView
+        android:id="@+id/tvTiempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⏱️ 20s"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+    
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"/>
+    
+    <EditText
+        android:id="@+id/etRima"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="✍️ Escribe tu rima..."
+        android:textSize="16sp"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="🎤 ENVIAR"
+            android:layout_marginEnd="10dp"/>
+        
+        <Button
+            android:id="@+id/btnChiste"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="😂 +1"/>
+    </LinearLayout>
+    
+</LinearLayout>
